@@ -15,6 +15,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* This ensures button wrappers do not add default text decorations */
+        a.download-link {
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body class="font-open-sans">
@@ -38,7 +45,10 @@
                 <h1>Zahid Hasan</h1>
                 <p>I bridge the gap between complex AI models, robust backend architecture, and defensive web security.</p>
                 <div>
-                    <button class="btn"><i class="fa-solid fa-download"></i> Download CV</button>
+                    <!-- Banner Download Button Wrapper -->
+                    <a href="Zahid_Hasan_CV.pdf" download="Zahid_Hasan_CV.pdf" class="download-link">
+                        <button class="btn"><i class="fa-solid fa-download"></i> Download CV</button>
+                    </a>
                     <button class="btn"><i class="fa-solid fa-phone"></i> Contact</button>
                 </div>
             </div>
@@ -175,8 +185,10 @@
         </div>
 
         <div class="text-center">
-
-            <button class="btn"><i class="fa-solid fa-download"></i> Download CV</button>
+            <!-- Bottom Resume Download Button Wrapper -->
+            <a href="Zahid_Hasan_CV.pdf" download="Zahid_Hasan_CV.pdf" class="download-link">
+                <button class="btn"><i class="fa-solid fa-download"></i> Download CV</button>
+            </a>
         </div>
 
     </section>
@@ -210,9 +222,6 @@
         </section>
     </footer>
 
-
-
 </body>
 
-</html>
 </html>
