@@ -1,280 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahid Hasan Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2=family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome Updated version -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-    <link rel="stylesheet" href="style.css">
-    <style>
-        a.download-link, a.project-link {
-            text-decoration: none;
-            display: inline-block;
-        }
-        /* Extra structural styling for newly added sections */
-        .project-box, .research-box {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1-fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .project-card, .research-card {
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }
-        .project-card:hover, .research-card:hover {
-            transform: translateY(-5px);
-        }
-        .research-badge {
-            background: #e2e8f0;
-            color: #4a5568;
-            padding: 4px 8px;
-            font-size: 12px;
-            border-radius: 4px;
-            display: inline-block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-    </style>
-</head>
-
-<body class="font-open-sans">
-
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <h2>Zahid<span class="color-orange">.Hasan</span></h2>
-            </div>
-
-            <ul class="menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li>
-                    <button class="btn" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=Zahidanik694@gmail.com&su=Job%20Opportunity', '_blank')">Hire me</button>
-                </li>
-            </ul>
-        </nav>
-
-        <section id="banner">
-            <div class="banner-content">
-                <h2>Hi, I am</h2>
-                <h1>Zahid Hasan</h1>
-                <p>I bridge the gap between complex AI models, robust backend architecture, and high-performance web systems.</p>
-                <div>
-                    <a href="Zahid_Hasan_CV.pdf" download="Zahid_Hasan_CV.pdf" class="download-link">
-                        <button class="btn"><i class="fa-solid fa-download"></i> Download CV</button>
-                    </a>
-                    <button class="btn" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=Zahidanik694@gmail.com&su=Contacting%20from%20Portfolio', '_blank')"><i class="fa-solid fa-phone"></i> Contact</button>
-                </div>
-            </div>
-            <div class="banner-image">
-                <img src="images/hardy.png" alt="Zahid Hasan">
-            </div>
-        </section>
-    </header>
-
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <div class="about-container container">
-            <div class="section-heading">
-                <h2>About ME</h2>
-                <p>I build secure, intelligent web ecosystems. Moving beyond standard web design, I develop responsive full-stack applications integrated with Large Language Models (LLMs) and advanced AI search frameworks. My core focus lies in clean structural code, dynamic business automation, and robust system integrity.</p>
-            </div>
-            <div class="about-info">
-                <div class="info-card">
-                    <p>Name:</p>
-                    <h4>Zahid Hasan Anik</h4>
-                </div>
-                <div class="info-card">
-                    <p>Email:</p>
-                    <h4>Zahidanik694@gmail.com</h4>
-                </div>
-                <div class="info-card">
-                    <p>From:</p>
-                    <h4>Mymensingh Sadar, Bangladesh</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section id="skills">
-        <div class="skills-container container">
-            <div class="section-heading">
-                <h2>What I do</h2>
-                <p>A quick overview of my primary engineering skill sets and core technologies that I use to deliver production-ready software systems.</p>
-            </div>
-
-            <div class="skill-box">
-                <div class="skill-card">
-                    <img src="images/icons/js.png" alt="Frontend">
-                    <h3>Frontend Development</h3>
-                    <p>React.js, JavaScript (ES6+), Tailwind CSS, HTML5, CSS3</p>
-                </div>
-                <div class="skill-card">
-                    <img src="images/icons/nodejs.png" alt="Backend">
-                    <h3>Backend & APIs</h3>
-                    <p>Python, FastAPI, Flask, RESTful APIs, JWT Authentication</p>
-                </div>
-                <div class="skill-card">
-                    <img src="images/icons/react.png" alt="AI/ML">
-                    <h3>Generative AI & ML</h3>
-                    <p>LangChain, Ollama, ChromaDB (Vector Store), Streamlit, TensorFlow</p>
-                </div>
-                <div class="skill-card">
-                    <img src="images/icons/nodejs.png" alt="Databases">
-                    <h3>Databases & DevTools</h3>
-                    <p>MongoDB, SQL, Git, GitHub, Docker, Linux Shell</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEW PROJECTS SECTION -->
-    <section id="projects" style="padding: 60px 0; background: #f7fafc;">
-        <div class="container">
-            <div class="section-heading" style="text-align: center;">
-                <h2>Featured Projects</h2>
-                <p>Explore some of my core projects demonstrating end-to-end stack ownership and AI integration.</p>
-            </div>
-
-            <div class="project-box">
-                <div class="project-card">
-                    <h3>Ai-Business-Dashboard</h3>
-                    <p style="margin: 10px 0; font-size: 14px; color: #718096;">React.js, JavaScript, Tailwind CSS</p>
-                    <p>A responsive admin dashboard featuring mock telemetry data visualization, interactive business analytics, and a dynamic dark-mode user interface.</p>
-                    <a href="https://github.com/zahidhasananik/Ai-Business-Dashboard" target="_blank" class="project-link" style="color: #ff6b6b; margin-top: 15px; font-weight: bold;">View on GitHub →</a>
-                </div>
-
-                <div class="project-card">
-                    <h3>RAGenius</h3>
-                    <p style="margin: 10px 0; font-size: 14px; color: #718096;">Python, LangChain, FastAPI, Streamlit</p>
-                    <p>Smart Multi-Modal RAG API and Resume Matcher pipeline built to intelligently extract context and insights from unstructured PDFs, Word documents, and local vector stores.</p>
-                    <a href="https://github.com/zahidhasananik/RAGenius" target="_blank" class="project-link" style="color: #ff6b6b; margin-top: 15px; font-weight: bold;">View on GitHub →</a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Ollama-Streamlit-Chatbot</h3>
-                    <p style="margin: 10px 0; font-size: 14px; color: #718096;">Python, Ollama, Streamlit, LLMs</p>
-                    <p>A secure conversational AI assistant application interface utilizing local Large Language Models (LLMs) via Ollama for privacy-focused real-time query handling.</p>
-                    <a href="https://github.com/zahidhasananik/Ollama-Streamlit-Chatbot" target="_blank" class="project-link" style="color: #ff6b6b; margin-top: 15px; font-weight: bold;">View on GitHub →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEW RESEARCH SECTION -->
+<!-- UPDATED OFFICIAL RESEARCH SECTION -->
     <section id="research" style="padding: 60px 0;">
         <div class="container">
             <div class="section-heading" style="text-align: center;">
                 <h2>Research & Publications</h2>
-                <p>Academic contributions and scientific papers accepted and published in global tech indexing forums.</p>
+                <p>Peer-reviewed academic contributions and scientific papers accepted and published in global tech indexing indexing forums.</p>
             </div>
 
             <div class="research-box">
+                <!-- Paper 1 -->
                 <div class="research-card">
-                    <span class="research-badge">IEEE Published</span>
-                    <h3>Machine Learning-Driven Predictive Analytics</h3>
-                    <p style="margin-top: 10px; color: #4a5568;">Co-authored research demonstrating high-accuracy system metrics optimization via advanced regression models.</p>
+                    <span class="research-badge" style="background: #e3f2fd; color: #0d47a1;">IEEE / ICCIT</span>
+                    <h3>Precise Detection of Tomato Leaf Diseases using Deep Learning Approach with EfficientNet</h3>
+                    <p style="margin: 10px 0; font-size: 14px; color: #718096; font-style: italic;">
+                        S. A. Tanim, A. R. Aurnob, <strong>Zahid Hasan Anik</strong>, M. I. Hossain
+                    </p>
+                    <p>Presented at the 26th International Conference on Computer and Information Technology (ICCIT), Cox’s Bazar, Bangladesh.</p>
+                    <a href="https://doi.org/10.1109/ICCIT60459.2023.10441130" target="_blank" class="project-link" style="color: #FD6E0A; margin-top: 15px; font-weight: bold; display: inline-block;">View Publication (DOI) →</a>
                 </div>
+                
+                <!-- Paper 2 -->
                 <div class="research-card">
-                    <span class="research-badge">IEEE Published</span>
-                    <h3>Defensive Security Frameworks in Web Applications</h3>
-                    <p style="margin-top: 10px; color: #4a5568;">Analysis of input validation flaws and the efficacy of modern cryptographic handshakes in mitigating injection vulnerabilities.</p>
+                    <span class="research-badge" style="background: #ffe8d6; color: #FD6E0A;">Springer Nature / IEEE</span>
+                    <h3>Quantifying Climate Change Effects on Standard Minimum and Maximum Average Temperature Extremes in Bangladesh: A Machine Learning Regression Analysis from Past to Present</h3>
+                    <p style="margin: 10px 0; font-size: 14px; color: #718096; font-style: italic;">
+                        M. E. Hossain, S. S. Ayon, M. S. U. Miah, <strong>Zahid Hasan Anik</strong>, M. M. R. Kabir, M. Mahmud
+                    </p>
+                    <p>Presented at the 20th IEEE Conference on Smart Technologies, analyzing regional environmental trends through statistical regression.</p>
+                    <a href="https://doi.org/10.1007/978-3-031-98498-3_23" target="_blank" class="project-link" style="color: #FD6E0A; margin-top: 15px; font-weight: bold; display: inline-block;">View Publication (DOI) →</a>
                 </div>
+
+                <!-- Paper 3 -->
                 <div class="research-card">
-                    <span class="research-badge">IEEE Published</span>
-                    <h3>Computer Vision Models for Structural Telemetry</h3>
-                    <p style="margin-top: 10px; color: #4a5568;">Exploratory paper analyzing real-time pixel grid sorting using lightweight convolutional neural network layers.</p>
+                    <span class="research-badge" style="background: #e3f2fd; color: #0d47a1;">IEEE / COMPAS</span>
+                    <h3>Forest Fire Detection using Ensemble Deep Learning Model with Xai</h3>
+                    <p style="margin: 10px 0; font-size: 14px; color: #718096; font-style: italic;">
+                        K. Tanvir, M. S. Kabir, <strong>Zahid Hasan Anik</strong>, M. R. Hasan, M. T. Tushar, R. B. Rahman
+                    </p>
+                    <p>Published in the 2024 IEEE International Conference on Computing, Applications and Systems (COMPAS), focusing on Explainable AI frameworks.</p>
+                    <a href="https://doi.org/10.1109/COMPAS60761.2024.10796582" target="_blank" class="project-link" style="color: #FD6E0A; margin-top: 15px; font-weight: bold; display: inline-block;">View Publication (DOI) →</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- RESUME SUMMARY SECTION -->
-    <section id="resume">
-        <div class="section-heading" style="text-align: center;">
-            <h2>A Summary of My Resume</h2>
-        </div>
-
-        <div class="resume-container container">
-            <div class="education">
-                <h2 class="section-title">My Education</h2>
-                <div class="resume-card">
-                    <h3 class="card-title">B.Sc. in Computer Science & Engineering</h3>
-                    <p class="card-info">American International University-Bangladesh (AIUB) / 2020 - 2024</p>
-                    <p class="card-text">Graduated with a strong foundation in core software engineering architecture, algorithm analysis, database designs, and machine learning structures.</p>
-                </div>
-                <hr>
-                <div class="resume-card">
-                    <h3 class="card-title">Higher Secondary Certificate (HSC)</h3>
-                    <p class="card-info">Cantonment Public School & College, Mymensingh / 2018 - 2019</p>
-                    <p class="card-text">Focused on Science stream including advanced mathematics and foundational computing principles.</p>
-                </div>
-            </div>
-
-            <div class="experience">
-                <h2 class="section-title">My Experience</h2>
-                <div class="resume-card">
-                    <h3 class="card-title">IT Specialist</h3>
-                    <p class="card-info">Golden Harvest Infotech Ltd. / Dec 2025 - Present</p>
-                    <p class="card-text">Managing internal system infrastructure operations, ensuring data pipeline availability, and supporting custom engineering automation integrations.</p>
-                </div>
-                <hr>
-                <div class="resume-card">
-                    <h3 class="card-title">Junior IT Specialist</h3>
-                    <p class="card-info">Acote Group / 2025 - 2025</p>
-                    <p class="card-text">Supported robust cloud networking routines, database storage compliance, and script-level tooling monitoring optimizations.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center" style="margin-top: 30px;">
-            <a href="Zahid_Hasan_CV.pdf" download="Zahid_Hasan_CV.pdf" class="download-link">
-                <button class="btn"><i class="fa-solid fa-download"></i> Download CV</button>
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <section class="footer-container container">
-            <div class="social">
-                <h2>Let's Connect</h2>
-                <p>Working Hours: Mon - Fri, 9:00 AM — 5:00 PM (GMT+6)</p>
-                <div class="icons">
-                    <a href="https://github.com/zahidhasananik" target="_blank" style="color: white; font-size: 24px; margin-right: 15px;"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com/" target="_blank" style="color: white; font-size: 24px;"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            
-            <form class="form" action="https://formspree.io/f/xeewazjk" method="POST">
-                <h2>Let’s Message me</h2>
-                <div>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div>
-                    <textarea rows="10" name="message" placeholder="Message" required></textarea>
-                </div>
-                <input class="btn" type="submit" value="Submit">
-            </form>
-        </section>
-    </footer>
-
-</body>
-</html>
